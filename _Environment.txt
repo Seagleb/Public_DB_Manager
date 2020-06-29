@@ -1,0 +1,25 @@
+Python 3.7.3
+Visual Studio Code 1.33.1 # Version Irrelevant
+PGAdmin 4.4 # For Database Viewing/Debugging Version Irrelevant except if you are following local server instructions
+
+Imports:
+tkinter # GUI
+tkinter ttk # Additional Widgets
+tkinter messagebox # GUI
+tkinter filedialog # For file browsing in backup/restore
+tkinter.font # To determine pixels of text for auto column adjust
+tkcalendar # For Selectable calendar
+ldap3 # Active Directory Authentication
+threading Thread # For multithreading in restore
+datetime # To determine current Date
+subprocess # Reading Command Prompt echo %logonserver%
+Psycopg2 # Postgres Library
+
+Compile Method:
+pyinstaller --windowed --hidden-import babel.numbers --icon .\DBM-Icon.ico -n Database-Manager .\GUI_Controller.py # For EXE and .dll's in a folder; tkcalendar had a hidden import
+Inno Setup Compiler 6.0.2 # Version Irrelevant, For creating a windows installer
+
+Local Server:
+postgresql-9.3.12
+Add postgres/bin to environmental system path
+Instructions located in Local_Server_Setup folder

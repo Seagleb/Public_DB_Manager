@@ -1,0 +1,20 @@
+Run postgresql-9.3.12
+	set passwords to password
+	uncheck the stack builder
+Type environment in windows search
+	click edit the system environment variables
+	click environment variables at bottom
+	under system variables doubleclick path
+	click new > Browse...
+	Navigate to your postgres\bin folder, select bin and click ok.
+install pgadmin4-4
+	open pgadmin 4
+	open your server, rightlick databases, select create database, type calibration_instruments for name make sure postgres is user, click save
+	right click calibration_instruments select restore
+	browse for the cal_instrus.backup
+	click restore options, select yes for pre-data, data, post-data scroll down and select yes for include CREATE DATABASE and clean before restore, select restore
+	You will likely see a fail, this is okay.
+refresh database
+	should see two schemas
+run DBManager
+	try to connect local and pray for the best
